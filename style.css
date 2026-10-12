@@ -24,39 +24,39 @@
 /* text-presets */
 .tp-1 {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: auto;
   letter-spacing: 0px;
 }
 
 .tp-2 {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: auto;
   letter-spacing: 0px;
 }
 
 .tp-3 {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.5;
   letter-spacing: 0px;
 }
 
 @media screen and (min-width: 768px) {
   .tp-1 {
-    font-size: 56px;
-    line-height: 66px;
+    font-size: 3.5rem;
+    line-height: calc(66/56);
   }
 
   .tp-2 {
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.125rem;
+    line-height: calc(21/18);
   }
 
   .tp-3 {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5;
   }
 }
 
@@ -121,6 +121,12 @@ main {
   height: 30px;
   border-radius: 100%;
   flex-shrink: 0;
+}
+
+.card summary:hover, 
+.card summary:focus {
+ color: var(--color-violet-600);
+ cursor: pointer;
 }
 
 .card details[open] summary:after {
